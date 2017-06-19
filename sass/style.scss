@@ -742,6 +742,7 @@ a#bntCase:hover {
     color: $colorscheme1;
     height: $sectionHeight / 2;
     margin-top: 4%;
+    border-top: 1px solid #676d73;
 }
 
 #callToAction-module .message-box {
@@ -907,6 +908,10 @@ a#bntCase:hover {
 
 
 /*blog*/
+
+.blogPage .site_logo {
+    min-width: initial;
+}
 
 .blogPage #blog-header {
     height: 70vh;
@@ -1139,9 +1144,74 @@ a#bntCase:hover {
         color: $btnColor2;
     }
 }
-.blogPage .testimonial-des::before{
+
+
+
+.blogPage .testimonial-des::before {
     position: relative;
 }
-.blogPage #jQuery-cycle li, .blogPage .cycleslider ul{
+
+.blogPage #jQuery-cycle li,
+.blogPage .cycleslider ul {
     width: 100% !important;
+    margin-bottom: 18%;
+}
+
+
+/*contact page*/
+
+#contactPagecallToAction {
+    height: auto;
+    padding: 5%;
+}
+
+.contactPageForm {
+    height: 100%;
+    width: 100%;
+}
+
+.contactPageForm form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 5%;
+}
+
+.formBox {
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.contactPageForm input {
+    padding: 2%;
+    text-transform: uppercase;
+    height: 50px;
+    margin: 0 0 3%;
+    width: 100%;
+    border-radius: 5px;
+    border-style: groove;
+}
+
+.contactPageForm textarea {
+    padding: 2%;
+    margin: 0 0 3%;
+    width: 100%;
+    border-radius: 5px;
+    border-style: groove;
+    text-transform: uppercase;
+}
+#conatactPgeBtn {
+    @extend #aboutfindBtn;
+    padding: 2%;
+    text-align: center;
+    background-color: $btnColor2;
+    border-radius: 50px;
+    width: 20%;
+    box-sizing: border-box;
+    margin: auto;
+    transition: all 0.3s;
+    overflow: hidden;
+    position: relative;
+    color: $btnColor1;
 }

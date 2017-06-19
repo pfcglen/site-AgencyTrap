@@ -29,7 +29,7 @@ a {
   color: #57AC68;
   border: 2px dashed #57AC68; }
 
-#findBtn:hover, #aboutfindBtn:hover, #callfindBtn:hover, #sidebarActionReadMore:hover, #hringfindBtn:hover {
+#findBtn:hover, #aboutfindBtn:hover, #callfindBtn:hover, #sidebarActionReadMore:hover, #conatactPgeBtn:hover, #hringfindBtn:hover {
   border: 2px dashed #57AC68;
   background-color: rgba(255, 255, 255, 0);
   color: #57AC68;
@@ -41,7 +41,7 @@ a#bntCase:hover {
   background-color: #ffffff;
   color: #57AC68; }
 
-#aboutfindBtn:hover, #callfindBtn:hover, #sidebarActionReadMore:hover {
+#aboutfindBtn:hover, #callfindBtn:hover, #sidebarActionReadMore:hover, #conatactPgeBtn:hover {
   background-color: #57AC68;
   color: #ffffff;
   opacity: 1; }
@@ -63,7 +63,7 @@ a#bntCase:hover {
   top: 5px;
   left: -10%; }
 
-#aboutfindBtn:before, #callfindBtn:before, #sidebarActionReadMore:before {
+#aboutfindBtn:before, #callfindBtn:before, #sidebarActionReadMore:before, #conatactPgeBtn:before {
   content: "\f061";
   position: absolute;
   font-family: fontawesome;
@@ -101,7 +101,7 @@ a#bntCase:hover {
   top: 5px;
   left: -10%; }
 
-#aboutfindBtn:before, #callfindBtn:before, #sidebarActionReadMore:before {
+#aboutfindBtn:before, #callfindBtn:before, #sidebarActionReadMore:before, #conatactPgeBtn:before {
   content: "\f061";
   position: absolute;
   font-family: fontawesome;
@@ -131,7 +131,7 @@ a#bntCase:hover {
   left: 80%;
   color: #ffffff; }
 
-#aboutfindBtn:hover:before, #callfindBtn:hover:before, #sidebarActionReadMore:hover:before {
+#aboutfindBtn:hover:before, #callfindBtn:hover:before, #sidebarActionReadMore:hover:before, #conatactPgeBtn:hover:before {
   left: 80%;
   color: #ffffff; }
 
@@ -264,7 +264,7 @@ a#bntCase:hover {
   text-decoration: none;
   border: 2px solid #57AC68; }
 
-#findBtn, #aboutfindBtn, #callfindBtn, #sidebarActionReadMore, #hringfindBtn {
+#findBtn, #aboutfindBtn, #callfindBtn, #sidebarActionReadMore, #conatactPgeBtn, #hringfindBtn {
   color: #57AC68;
   background-color: #ffffff;
   text-decoration: none;
@@ -316,7 +316,7 @@ a#bntCase:hover {
   background-size: cover;
   background-repeat: no-repeat; }
 
-#aboutfindBtn, #callfindBtn, #sidebarActionReadMore {
+#aboutfindBtn, #callfindBtn, #sidebarActionReadMore, #conatactPgeBtn {
   font-weight: 700;
   padding: 3%;
   display: block;
@@ -649,7 +649,8 @@ a#bntCase:hover {
   background-color: #F8F8F8;
   color: #676D73;
   height: 50vh;
-  margin-top: 4%; }
+  margin-top: 4%;
+  border-top: 1px solid #676d73; }
 
 #callToAction-module .message-box {
   margin: auto;
@@ -786,6 +787,9 @@ a#bntCase:hover {
 
 /*end of call to acton*/
 /*blog*/
+.blogPage .site_logo {
+  min-width: initial; }
+
 .blogPage #blog-header {
   height: 70vh;
   display: block;
@@ -990,5 +994,57 @@ a#bntCase:hover {
 .blogPage .testimonial-des::before {
   position: relative; }
 
-.blogPage #jQuery-cycle li, .blogPage .cycleslider ul {
-  width: 100% !important; }
+.blogPage #jQuery-cycle li,
+.blogPage .cycleslider ul {
+  width: 100% !important;
+  margin-bottom: 18%; }
+
+/*contact page*/
+#contactPagecallToAction {
+  height: auto;
+  padding: 5%; }
+
+.contactPageForm {
+  height: 100%;
+  width: 100%; }
+
+.contactPageForm form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 5%; }
+
+.formBox {
+  flex: 1 0 100%;
+  position: relative; }
+
+.contactPageForm input {
+  padding: 2%;
+  text-transform: uppercase;
+  height: 50px;
+  margin: 0 0 3%;
+  width: 100%;
+  border-radius: 5px;
+  border-style: groove; }
+
+.contactPageForm textarea {
+  padding: 2%;
+  margin: 0 0 3%;
+  width: 100%;
+  border-radius: 5px;
+  border-style: groove;
+  text-transform: uppercase; }
+
+#conatactPgeBtn {
+  padding: 2%;
+  text-align: center;
+  background-color: #57AC68;
+  border-radius: 50px;
+  width: 20%;
+  box-sizing: border-box;
+  margin: auto;
+  transition: all 0.3s;
+  overflow: hidden;
+  position: relative;
+  color: #ffffff; }
