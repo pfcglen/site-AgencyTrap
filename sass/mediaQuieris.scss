@@ -1,0 +1,104 @@
+$headerFontSize: 1.5em;
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+
+/* Portrait and Landscape */
+
+@media (max-width: 480px) {
+    .nav_grid_child nav {
+        display: none;
+    }
+    .message-box .headline {
+        font-size: $headerFontSize;
+    }
+    #intro-module {
+        height: 100%;
+    }
+    .message-box ul.more-btns li {
+        flex-basis: 50%;
+    }
+    .section-box {
+        height: 100%;
+    }
+    .aboutBox {
+        flex: 1 1 100%;
+    }
+    .about-grid,
+    .hiring-grid {
+        flex-direction: column;
+    }
+    #aboutfindBtn {
+        width: 50%;
+        margin: auto;
+    }
+    #product-module {
+        margin-bottom: 5%;
+    }
+    #aboutleftBox,
+    #hiringleftBox {
+        height: 50vh;
+        order: -1;
+    }
+    #aboutRightBox p {
+        margin: 0 auto;
+        text-align: center;
+        padding: 2%;
+        color: #969DAB;
+    }
+    .product-icons ul {
+        flex-direction: column;
+    }
+    .service-list-icons {
+        padding: 0;
+        flex-direction: column;
+    }
+    .box-dots {
+        margin: 5%;
+    }
+    .cycleslider {
+        width: 100%;
+        height: 100%;
+    }
+    #callToAction-module {
+        height: auto;
+        margin-bottom: 5%;
+    }
+    #callfindBtn {
+        width: 50%;
+    }
+    #footer-module {
+        height: 100%;
+    }
+    #logo-circle {
+        display: none;
+    }
+    .box-grid-footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #goTotop {
+        position: relative;
+    }
+    .blogPage .blog-intro-message article {
+        padding: 5%;
+        h1 {
+            width: 100%;
+        }
+        ul {
+            width: 100%;
+        }
+    }
+    .blogPage .blog-content {
+        width: 100%;
+        height: 10%;
+        padding: 5%;
+    }
+    .blogPage .main-blog .container{
+        padding: 0;
+    }
+   .blogPage .blog-sidebar{
+        width: 100%;
+    }
+}

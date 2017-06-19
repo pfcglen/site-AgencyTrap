@@ -1,0 +1,285 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Blog-Aleph</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQuieris.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body class="blogPage">
+    <div class="main-wrapper">
+        <!--header-->
+        <header class="nav_module container">
+            <section class="nav_grid">
+                <section class="logo nav_grid_child">
+                    <a href="#"><img class="site_logo" src="img/blog_logo.png" alt="Aleph_log"></a>
+                </section>
+                <section class="mainmenu nav_grid_child">
+                    <nav>
+                        <ul>
+                            <li><a href="#intro-module">Home</a></li>
+                            <li><a href="#about-module">About Us</a></li>
+                            <li><a href="#sevice-module">Service</a></li>
+                            <li><a href="#hiring-module">Jobs</a></li>
+                            <li><a href="#callToAction-module">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+        </header>
+        <!--end of header-->
+
+        <!--blog header and introduction-->
+        <section class="section-box" id="blog-header">
+            <section class="container blog-box">
+                <article class="message-box">
+                    <section class="blog-intro-message container">
+                        <article>
+                            <h1>Increasing productivity through teamwork</h1>
+                            <ul class="blog-author">
+                                <li><img src="data:data:image/png;base64,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" alt="author-image"><a href="#">admin</a> | Posted on July 30, 2014</li>
+                            </ul>
+                        </article>
+                    </section>
+                </article>
+            </section>
+        </section>
+        <!--end of introduction-->
+        <!-- Usage as a class -->
+        <div class="clearfix"></div>
+
+        <!--blog-->
+        <section class="main-blog container">
+            <section class="blog-grid">
+                <section class="blog-content">
+                    <article class="blog-con container">
+                        <p class="pColor">Lorem ipsum dolor sit amet, cu tibique molestiae laboramus quo, choro tacimates at vim. Laudem expetendis dissentiunt his ne, quo platonem philosophia ea. Usu at prima tollit assentior. Elitr accusata per no, cu nominavi dissentias est. Ne verear vivendum his, pro ne tation singulis legendos, his veniam labitur ei. Diam quodsi vis id, ex per oporteat efficiantur. Zril hendrerit an vis. Eum prima munere utroque id, sea te nullam facete! An tation complectitur vel, ei pro habeo labore facilisi! Vim et delectus placerat. Semper vocent facilisi est ut, eu elit periculis contentiones eum, mollis nostrum maiestatis eu sea. Quem justo repudiare mel ut. Ne vitae sanctus mea, nec debet singulis id!</p>
+
+                        <p class="pColor">Lorem ipsum dolor sit amet, cu tibique molestiae laboramus quo, choro tacimates at vim. Laudem expetendis dissentiunt his ne, quo platonem philosophia ea. Usu at prima tollit assentior. Elitr accusata per no, cu nominavi dissentias est. Ne verear vivendum his, pro ne tation singulis legendos, his veniam labitur ei. Diam quodsi vis id, ex per oporteat efficiantur. Zril hendrerit an vis. Eum prima munere utroque id, sea te nullam facete! An tation complectitur vel, ei pro habeo labore facilisi! Vim et delectus placerat. Semper vocent facilisi est ut, eu elit periculis contentiones eum, mollis nostrum maiestatis eu sea. Quem justo repudiare mel ut. Ne vitae sanctus mea, nec debet singulis id!</p>
+
+                        <p class="pColor">Lorem ipsum dolor sit amet, cu tibique molestiae laboramus quo, choro tacimates at vim. Laudem expetendis dissentiunt his ne, quo platonem philosophia ea. Usu at prima tollit assentior. Elitr accusata per no, cu nominavi dissentias est. Ne verear vivendum his, pro ne tation singulis legendos, his veniam labitur ei. Diam quodsi vis id, ex per oporteat efficiantur. Zril hendrerit an vis. Eum prima munere utroque id, sea te nullam facete! An tation complectitur vel, ei pro habeo labore facilisi! Vim et delectus placerat. Semper vocent facilisi est ut, eu elit periculis contentiones eum, mollis nostrum maiestatis eu sea. Quem justo repudiare mel ut. Ne vitae sanctus mea, nec debet singulis id!</p>
+                    </article>
+                    <section id="blog-content-image">
+                        <figure><img src="img/blog.png" alt="blog-content-image"></figure>
+                    </section>
+
+                    <article class="blog-con container">
+                        <p class="pColor">Lorem ipsum dolor sit amet, cu tibique molestiae laboramus quo, choro tacimates at vim. Laudem expetendis dissentiunt his ne, quo platonem philosophia ea. Usu at prima tollit assentior. Elitr accusata per no, cu nominavi dissentias est. Ne verear vivendum his, pro ne tation singulis legendos, his veniam labitur ei. Diam quodsi vis id, ex per oporteat efficiantur. Zril hendrerit an vis. Eum prima munere utroque id, sea te nullam facete! An tation complectitur vel, ei pro habeo labore facilisi! Vim et delectus placerat. Semper vocent facilisi est ut, eu elit periculis contentiones eum, mollis nostrum maiestatis eu sea. Quem justo repudiare mel ut. Ne vitae sanctus mea, nec debet singulis id!</p>
+
+                        <p class="pColor">Lorem ipsum dolor sit amet, cu tibique molestiae laboramus quo, choro tacimates at vim. Laudem expetendis dissentiunt his ne, quo platonem philosophia ea. Usu at prima tollit assentior. Elitr accusata per no, cu nominavi dissentias est. Ne verear vivendum his, pro ne tation singulis legendos, his veniam labitur ei. Diam quodsi vis id, ex per oporteat efficiantur. Zril hendrerit an vis. Eum prima munere utroque id, sea te nullam facete! An tation complectitur vel, ei pro habeo labore facilisi! Vim et delectus placerat. Semper vocent facilisi est ut, eu elit periculis contentiones eum, mollis nostrum maiestatis eu sea. Quem justo repudiare mel ut. Ne vitae sanctus mea, nec debet singulis id!</p>
+
+                        <p class="pColor">Lorem ipsum dolor sit amet, cu tibique molestiae laboramus quo, choro tacimates at vim. Laudem expetendis dissentiunt his ne, quo platonem philosophia ea. Usu at prima tollit assentior. Elitr accusata per no, cu nominavi dissentias est. Ne verear vivendum his, pro ne tation singulis legendos, his veniam labitur ei. Diam quodsi vis id, ex per oporteat efficiantur. Zril hendrerit an vis. Eum prima munere utroque id, sea te nullam facete! An tation complectitur vel, ei pro habeo labore facilisi! Vim et delectus placerat. Semper vocent facilisi est ut, eu elit periculis contentiones eum, mollis nostrum maiestatis eu sea. Quem justo repudiare mel ut. Ne vitae sanctus mea, nec debet singulis id!</p>
+                    </article>
+
+                </section>
+                <!--sidebar-->
+                <section class="blog-sidebar">
+                    <!--sidebar-widget-->
+                    <section class="sidebar-widget">
+                        <section class="action-widget">
+                            <article>
+                                <h1>Small action to action widget</h1>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing quia beatae.</p>
+                                <p class="pColor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil vitae fuga, doloremque quia natus totam, repudiandae saepe amet reprehenderit expedita quidem atque eius ratione vero nobis eos debitis a, fugiat?</p>
+                                <p><a href="#" class="btnMore" id="sidebarActionReadMore">Read More</a></p>
+                            </article>
+                        </section>
+                    </section>
+                    <!--end of sidebar-widget-->
+                    <!--testimonial-->
+                    <section class="sidebar-testimonial">
+                        <section class="testimonial-box container">
+                            <section class="cycleslider">
+                                <ul id="jQuery-cycle" style="position: relative; width: 351.813px; height: 390.766px;">
+                                    <li style="background-color: rgb(255, 255, 255); position: absolute; top: 0px; left: 0px; z-index: 3; opacity: 0; display: none; width: 351.813px; height: 390.766px;">
+                                        <section class="testimonial-box">
+                                            <blockquote class="testimonial-des">
+                                                <p class="pColor">Lorem ipsum dolor sit amet, sit praesentium molestias vel blanditiis consectetur eveniet iure assumenda vero asperiores! Voluptas, reprehenderit.</p>
+                                                <p class="pColor">-Tom Brown</p>
+                                            </blockquote>
+                                            <p><span id="downTriangle"></span></p>
+                                        </section>
+                                        <section class="clientAvatar">
+                                            <figure><img class="img-circle" src="img/clientAvatr.png" alt="cleint face"></figure>
+                                        </section>
+                                    </li>
+
+                                    <li style="background-color: rgb(255, 255, 255); position: absolute; top: 0px; left: 0px; display: block; z-index: 4; opacity: 1; width: 351.813px; height: 370.766px;">
+                                        <section class="testimonial-box">
+                                            <blockquote class="testimonial-des">
+                                                <p class="pColor">Lorem ipsum dolor sit amet, sit praesentium molestias vel blanditiis consectetur eveniet iure assumenda vero asperiores! Voluptas, reprehenderit.</p>
+                                                <p class="client-name pColor">-Bill Gates</p>
+                                            </blockquote>
+                                            <p><span id="downTriangle"></span></p>
+                                        </section>
+                                        <section class="clientAvatar">
+                                            <figure><img class="img-circle" src="img/1-01-128.png" alt="cleint face"></figure>
+                                        </section>
+                                    </li>
+
+                                    <li style="background-color: rgb(255, 255, 255); position: absolute; top: 0px; left: 0px; display: none; z-index: 3; opacity: 0; width: 351.813px; height: 370.766px;">
+                                        <section class="testimonial-box">
+                                            <blockquote class="testimonial-des">
+                                                <p class="pColor">Lorem ipsum dolor sit amet, sit praesentium molestias vel blanditiis consectetur eveniet iure assumenda vero asperiores! Voluptas, reprehenderit.</p>
+                                                <p class="client-name pColor">-Robert Conner</p>
+                                            </blockquote>
+                                            <p><span id="downTriangle"></span></p>
+                                        </section>
+                                        <section class="clientAvatar">
+                                            <figure><img class="img-circle" src="img/24-128.png" alt="cleint face"></figure>
+                                        </section>
+                                    </li>
+                                </ul>
+
+                                <!--jquery cle dots-->
+                                <section class="box-dots">
+                                    <section id="cyleDots"><a href="#" class="">1</a><a href="#" class="activeSlide">2</a><a href="#" class="">3</a></section>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <!--end of testimonial-->
+                    <!--end of sidebar-->
+                </section>
+            </section>
+        </section>
+
+        <!--end of blog-->
+
+        <div class="clearfix"></div>
+        <!--call to action-->
+        <section class="section-box" id="callToAction-module">
+            <article class="message-box container">
+                <h1 class="headline">Call to action always <strong>awesome</strong></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum beatae facere, labore porro! Maxime perspiciatis inventore vitae quia fugiat, dolorum hic nisi est expedita sint omnis laborum quod, eveniet ab.</p>
+                <p class="text-center"><a class="btnMore" id="callfindBtn" href="blog.html">Find More</a></p>
+            </article>
+        </section>
+        <!--end of call to action-->
+
+        <!--footer-->
+        <footer id="footer-module">
+            <section class="container box-grid-footer">
+                <section class="footer-box" id="logo-circle">
+                    <figure>
+                        <a href="#"><img src="img/logo-small.png" alt="aleph"></a>
+                    </figure>
+                </section>
+                <section class="footer-box" id="footer-mobile-logo">
+                    <article class="footer-box-grid">
+                        <h3 class="footer-item">Solution</h3>
+                        <ul>
+                            <li><a href="#">Pexels Videos</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Designbreak</a></li>
+                            <li><a href="#">API</a></li>
+                            <li><a href="#">FAQ / Contact</a></li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="footer-box" id="footer-sltn">
+                    <article class="footer-box-grid">
+                        <h3 class="footer-item">Services</h3>
+                        <ul>
+                            <li><a href="#">Popular Photos</a></li>
+                            <li><a href="#">Hig Definition Wallpapers</a></li>
+                            <li><a href="#">Photo license</a></li>
+                            <li><a href="#">Kostenlose Fotos,Blumenbilder</a></li>
+                            <li><a href="#">Hintergrunderilder</a></li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="footer-box" id="footer-srv">
+                    <article class="footer-box-grid">
+                        <h3 class="footer-item">Company</h3>
+                        <ul>
+                            <li><a href="#">Popular Photos</a></li>
+                            <li><a href="#">Hig Definition Wallpapers</a></li>
+                            <li><a href="#">Photo license</a></li>
+                            <li><a href="#">Kostenlose Fotos,Blumenbilder</a></li>
+                            <li><a href="#">Hintergrunderilder</a></li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="footer-box" id="footer-cmpny">
+                    <article class="footer-box-grid">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="img/facebook.png" alt="connect to facebook"></figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="img/twitter.png" alt="connect to twitter"></figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure><img src="img/linkendIn.png" alt="connect to linkendIn"></figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="footer-box-grid">
+                        <h3 class="footer-item">Subscribe</h3>
+                        <p>Lorem ipsum dolor sit amet, deserunt labore provident saepe voluptas dignissimos sapiente reiciendis autem.</p>
+                        <!--maillchimp-->
+                        <!-- Begin MailChimp Signup Form -->
+                        <div id="mc_embed_signup">
+                            <form action="http://geminiscorpio.us8.list-manage.com/subscribe/post?u=ac82e29c2520c539923505f07&amp;id=6117df9f4a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+                                <div id="mc_embed_signup_scroll">
+                                    <div class="mc-field-group">
+                                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ac82e29c2520c539923505f07_6117df9f4a" tabindex="-1" value=""></div>
+                                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!--End mc_embed_signup-->
+
+                        <!--end of mailchimp-->
+                    </article>
+                </section>
+            </section>
+            <section class="container-fluid" id="goTotop">
+                <article class="container">
+                    <p class="text-right"><a href="#" id="scrollToTp">Back To Top</a></p>
+                </article>
+            </section>
+        </footer>
+        <!--end of footer-->
+    </div>
+
+    <!--js file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="js/jquery.cycle.all.js"></script>
+    <script src="js/custom-testimonial.js"></script>
+    <script src="js/custom-scroll.js"></script>
+</body>
+
+</html>

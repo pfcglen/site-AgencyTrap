@@ -1,0 +1,1147 @@
+//global variable
+$displayflex: flex;
+$headerHeight: 10%;
+$sectionHeight: 100vh;
+$btnColor1: #ffffff;
+$btnColor2: #57AC68;
+$colorscheme1: #676D73;
+$colorscheme2: #F4F4F4;
+$colorscheme3: #969DAB;
+$colorscheme4: #D8D9DB;
+$colorscheme5: #F8F8F8;
+$colorscheme6: #0A1332;
+$colorscheme7: #21273D;
+$superBlack:#000000;
+$iconSizeW: 100px;
+$iconSizeH:100px;
+
+/*anchor*/
+
+a {
+    color: $colorscheme1;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+
+/*anchor hovering*/
+
+@mixin anchorsBeforeIconhover {
+    background-color: $btnColor2;
+    color: $btnColor1;
+    opacity: 1;
+}
+
+.mainmenu a:hover {
+    border: 1px dashed $btnColor2;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s;
+    color: $btnColor2;
+}
+
+
+/*adding right arrow to anchor*/
+
+@mixin anchorsBeforeIcon {
+    content: "\f061";
+    position: absolute;
+    font-family: fontawesome;
+    color: $btnColor2;
+    font-size: 125%;
+    line-height: 3;
+    transition: all 0.3s;
+    height: 100%;
+    top: 5px;
+    left: -10%;
+}
+
+
+/*showing the arrow when hovering the icon*/
+
+@mixin anchorsBeforeIconshow {
+    left: 80%;
+    color: $btnColor1;
+}
+
+
+/*anchor font weight and color*/
+
+@mixin anchor {
+    color: $colorscheme1;
+    font-weight: 700;
+}
+
+
+/* anchor buttons*/
+
+#getBtn:hover:before {
+    @include anchorsBeforeIconshow;
+    color: $btnColor2;
+}
+
+#getBtn:hover {
+    @include anchorsBeforeIconhover;
+    background-color: $btnColor1;
+    color: $btnColor2;
+    border: 2px dashed $btnColor2;
+}
+
+#findBtn:hover {
+    border: 2px dashed $btnColor2;
+    background-color: rgba(255, 255, 255, 0);
+    color: $btnColor2;
+    transition: all 0.3s;
+}
+
+a#bntCase:hover {
+    border: 2px dashed $btnColor2;
+    transition: all 0.3s;
+    background-color: $btnColor1;
+    color: $btnColor2;
+}
+
+#aboutfindBtn:hover {
+    @include anchorsBeforeIconhover;
+}
+
+#hringfindBtn:hover {
+    @include anchorsBeforeIconhover;
+}
+
+#getBtn:before {
+    @include anchorsBeforeIcon;
+}
+
+#aboutfindBtn:before {
+    @include anchorsBeforeIcon;
+}
+
+#hringfindBtn:before {
+    @include anchorsBeforeIcon;
+    top: 0;
+}
+
+#sidebarActionReadMore:before {
+    top: -7px;
+    @include anchorsBeforeIcon;
+}
+
+#aboutfindBtn:before {
+    @include anchorsBeforeIcon;
+    top: 0;
+}
+
+#getBtn:before {
+    @include anchorsBeforeIcon;
+    top: 3px;
+}
+
+#hringfindBtn:hover:before {
+    @include anchorsBeforeIconshow;
+}
+
+#aboutfindBtn:hover:before {
+    @include anchorsBeforeIconshow;
+}
+
+#callfindBtn:before {
+    @include anchorsBeforeIcon;
+    top: 5px;
+}
+
+#callfindBtn:hover {
+    @include anchorsBeforeIconhover;
+}
+
+#callfindBtn:hover:before {
+    @include anchorsBeforeIconshow;
+}
+
+.service-desc h5:hover {
+    color: $btnColor2;
+}
+
+.box-grid-footer a:hover {
+    color: $btnColor2;
+    text-decoration: none;
+}
+
+
+/*hover effect*/
+
+
+/*header*/
+
+.main-wrapper {
+    position: relative;
+}
+
+.nav_module {
+    height: $headerHeight;
+    overflow: hidden;
+    padding-top: 3%;
+    box-sizing: border-box;
+}
+
+.nav_grid {
+    display: $displayflex;
+    justify-content: space-between;
+    height: $headerHeight + 80%;
+    align-items: center;
+}
+
+.nav_grid_child {
+    flex: 1 1 50%;
+}
+
+.mainmenu {
+    ul {
+        display: $displayflex;
+        height: $headerHeight + 80%;
+        justify-content: flex-end;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        align-items: stretch;
+    }
+    li {
+        text-align: center;
+        align-self: center;
+        text-transform: uppercase;
+        flex-basis: 20%;
+    }
+    a {
+        @include anchor;
+        padding: 5px;
+    }
+}
+
+.site_logo {
+    min-width: 32%;
+    height: 40px;
+}
+
+
+/*intro*/
+
+#intro-module {
+    height: $sectionHeight - 10vh;
+    position: relative;
+    margin: 0 auto;
+    color: $colorscheme1;
+}
+
+.intro-message {
+    display: $displayflex;
+    height: 100%;
+    width: calc(100% - 30%);
+    padding: 10% 1% 10%;
+    box-sizing: border-box;
+}
+
+.message-box {
+    margin: auto;
+    .headline {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0 3% 3%;
+        position: relative;
+    }
+    p {
+        text-align: center;
+        margin: 0;
+        padding: 0 3%;
+    }
+    ul.more-btns {
+        list-style: none;
+        margin: 5% 2% 0;
+        padding: 3% 3% 0;
+        display: $displayflex;
+        justify-content: center;
+        align-items: center;
+        height: 25%;
+        box-sizing: border-box;
+    }
+    ul.more-btns li {
+        flex-basis: 25%;
+        text-align: center;
+    }
+    .btnMore {
+        padding: 10%;
+        display: block;
+        text-align: center;
+        background-color: $btnColor2;
+        border-radius: 50px;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.message-box ul.more-btns li:first-child {
+    margin-right: 5%;
+}
+
+#getBtn {
+    color: $btnColor1;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid $btnColor2;
+}
+
+#findBtn {
+    color: $btnColor2;
+    background-color: $btnColor1;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid $btnColor2;
+    font-weight: 700;
+    overflow: hidden;
+    position: relative;
+}
+
+.section-box {
+    height: $sectionHeight;
+}
+
+@mixin bgImgePosCenter {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*about*/
+
+#about-module {
+    position: relative;
+}
+
+@mixin aboutGrid {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-grid {
+    @include aboutGrid;
+}
+
+.aboutBox {
+    flex: 1 1 50%;
+}
+
+@mixin aboutRightBox {
+    background-color: $colorscheme6;
+    padding: 5%;
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    article {
+        margin: auto;
+        color: $btnColor1;
+    }
+    p {
+        margin: 0 auto;
+        text-align: left;
+        padding: 2% 5% 2% 0;
+        color: $colorscheme3;
+    }
+}
+
+#aboutRightBox {
+    @include aboutRightBox;
+}
+
+#aboutleftBox {
+    background-image: url(../img/rightImgAbout.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#aboutfindBtn {
+    @extend #findBtn;
+    font-weight: 700;
+    padding: 3%;
+    display: block;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    width: 40%;
+    box-sizing: border-box;
+    margin-top: 10%;
+}
+
+.headline {
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1em;
+    padding: 0 5% 5% 0;
+}
+
+
+/*product*/
+
+#product-module {
+    color: $colorscheme1;
+}
+
+@mixin message-box {
+    margin: auto;
+    min-width: 75%;
+    padding: 0 2% 2% 2%;
+    height: auto;
+}
+
+#product-module .message-box {
+    @include message-box;
+}
+
+@mixin headline {
+    margin: 7% 0 0;
+    strong {
+        color: $superBlack;
+    }
+}
+
+#product-module .headline {
+    @include headline;
+}
+
+@mixin headlineBottomBorder {
+    content: '';
+    width: 18%;
+    height: 1px;
+    position: absolute;
+    border-bottom: 3px solid $btnColor2;
+    left: 40%;
+    top: 1.5em;
+}
+
+#product-module .headline:after {
+    @include headlineBottomBorder;
+}
+
+.product-icons {
+    margin-top: 2%;
+    ul {
+        display: $displayflex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        flex: 1 1 50%;
+        display: $displayflex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 2% 2%;
+    }
+    .icon-img {
+        width: $iconSizeW;
+        height: $iconSizeH;
+    }
+    .product-img {
+        flex: 0 0 30%;
+        align-self: center;
+    }
+    .product-des {
+        text-align: left;
+        padding: 0 2% 2%;
+    }
+    .itemTitle {
+        margin: 0;
+        line-height: 1.5em;
+        padding: 2% 2% 2% 0;
+        text-transform: capitalize;
+        color: $btnColor2;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    p {
+        margin: 0;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+    }
+    .btnWrappertag {
+        text-align: center;
+        position: relative;
+        margin: 2% 2% 0 2%;
+        line-height: 3em;
+    }
+    #bntCase {
+        background-color: $btnColor2;
+        padding: 1.5%;
+        color: $btnColor1;
+        border-radius: 50px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        border: 2px solid $btnColor2;
+    }
+}
+
+
+/*service*/
+
+#sevice-module {
+    background-color: $colorscheme2;
+    color: $colorscheme1;
+    height: 100%;
+}
+
+#sevice-module .message-box {
+    @include message-box;
+}
+
+#sevice-module .headline {
+    @include headline;
+}
+
+#sevice-module .headline:after {
+    @include headlineBottomBorder;
+}
+
+.service-list-icons {
+    margin: 0 0 5%;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    li {
+        flex: 0 0 30%;
+        margin: 0;
+        text-align: center;
+        padding: 2%;
+        box-sizing: border-box;
+    }
+}
+
+.service-desc h5 {
+    font-weight: 700;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 5%;
+}
+
+.serviceIcon {
+    p {
+        text-align: center;
+        margin: 0;
+        line-height: 4em;
+    }
+    img {
+        min-width: 15%;
+        height: auto;
+    }
+}
+
+
+/*hiring*/
+
+#hiring-module-module {
+    position: relative;
+}
+
+.hiring-grid {
+    @include aboutGrid;
+}
+
+#hiringRightBox {
+    @include aboutRightBox;
+}
+
+.hiringBox {
+    flex: 1 1 50%;
+}
+
+#hiringleftBox {
+    background-image: url('../img/weAreHiring.png');
+    @include bgImgePosCenter;
+}
+
+#hringfindBtn {
+    @extend #findBtn;
+    font-weight: 700;
+    padding: 3%;
+    display: block;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    width: 40%;
+    box-sizing: border-box;
+    margin-top: 10%;
+}
+
+
+/*end of hiring*/
+
+
+/*testimonial*/
+
+#testimonial-module {
+    background-color: $btnColor1;
+    color: $colorscheme1;
+}
+
+#testimonial-module .message-box {
+    @include message-box;
+}
+
+#testimonial-module .headline {
+    @include headline;
+}
+
+#testimonial-module .headline:after {
+    @include headlineBottomBorder;
+}
+
+.testimonial-box.container {
+    margin-top: 4%;
+}
+
+.cycleslider {
+    width: calc(100% / 2);
+    height: calc(100vh / 2);
+    position: relative;
+    margin: auto;
+    ul {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+        li {
+            display: $displayflex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+            section {
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+.testimonial-box .testimonial-des {
+    padding: 5%;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    border: 1px solid #D8D9DB;
+    text-transform: lowercase;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+.testimonial-des::before {
+    color: $colorscheme4;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    position: absolute;
+    left: 0;
+    top: 20%;
+}
+
+.clientAvatar {
+    margin: 5% 5% 0 5%;
+    padding: 2% 2% 0 2%;
+    display: $displayflex;
+    figure {
+        margin: auto;
+    }
+    img {
+        margin: auto;
+    }
+}
+
+.client-name {
+    text-transform: capitalize;
+}
+
+#downTriangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 12.5px 0 12.5px;
+    border-color: #ffffff transparent transparent transparent;
+    line-height: 0px;
+    _border-color: #ffffff #000000 #000000 #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+
+
+/*jquery slider*/
+
+#jQuery-cycle li {
+    background-color: $btnColor1;
+}
+
+.box-dots {
+    display: $displayflex;
+    position: relative;
+    height: 4vh;
+    margin: 2% 2% 0;
+}
+
+#cyleDots {
+    display: $displayflex;
+    padding: 0;
+    height: 14px;
+    z-index: 10;
+    margin: auto;
+}
+
+#cyleDots a {
+    display: block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    text-indent: -999em;
+    background: #fff;
+    border-radius: 10px;
+    /* must be the same as width and height */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0 0 1px 1px #707173;
+    /* border color */
+    margin-right: 10px;
+}
+
+#cyleDotsa {
+    background: #c0c0c0;
+    /* optional: color when hovered */
+}
+
+#cyleDots a.activeSlide {
+    background: #707173;
+    /* color when active */
+}
+
+
+/*end of testimonial*/
+
+
+/*call to acton*/
+
+#callToAction-module {
+    background-color: $colorscheme5;
+    color: $colorscheme1;
+    height: $sectionHeight / 2;
+    margin-top: 4%;
+}
+
+#callToAction-module .message-box {
+    @include message-box;
+}
+
+#callToAction-module .headline {
+    @include headline;
+}
+
+#callToAction-module .headline:after {
+    @include headlineBottomBorder;
+}
+
+#callfindBtn {
+    @extend #aboutfindBtn;
+    padding: 2%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    width: 20%;
+    box-sizing: border-box;
+    margin: 5% auto 0;
+    transition: all 0.3s;
+    overflow: hidden;
+    position: relative;
+    a {
+        color: $btnColor2;
+    }
+}
+
+
+/*footer*/
+
+#footer-module {
+    height: 100%;
+    background-color: $colorscheme6;
+}
+
+@mixin footerBox {
+    list-style: none;
+    padding: 0;
+}
+
+.box-grid-footer {
+    display: $displayflex;
+}
+
+.box-grid-footer ul {
+    @include footerBox;
+}
+
+#logo-circle img {
+    width: 60%;
+}
+
+.box-grid-footer a {
+    color: $colorscheme1;
+    font-weight: normal;
+    font-weight: normal;
+}
+
+.box-grid-footer {
+    display: $displayflex;
+    box-sizing: border-box;
+    padding-top: 5%;
+    align-items: flex-start;
+}
+
+#logo-circle {
+    flex-basis: 8%;
+}
+
+#footer-cmpny {
+    flex-basis: 30%;
+    color: $colorscheme1;
+}
+
+.footer-box {
+    flex: 1 0 20%;
+}
+
+.footer-item {
+    margin: 0 5% 5% 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: $btnColor1;
+}
+
+#footer-cmpny ul {
+    @include footerBox;
+    display: $displayflex;
+}
+
+#footer-cmpny ul li {
+    width: 12%;
+}
+
+#footer-cmpny img {
+    width: 56%;
+}
+
+@mixin socialMediaIcons {
+    width: 70%;
+}
+
+#footer-cmpny img {
+    @include socialMediaIcons;
+}
+
+#footer-cmpny img:hover {
+    opacity: 0.5;
+}
+
+#goTotop {
+    position: relative;
+    margin-top: 5%;
+    background-color: $colorscheme7;
+    height: 50px;
+}
+
+#goTotop .container {
+    height: 100%;
+}
+
+#goTotop p {
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 15px 0;
+}
+
+#goTotop a {
+    color: $btnColor2;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#mce-EMAIL {
+    background: #21273D;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #57AC68;
+    margin: 15px auto;
+}
+
+#mc-embedded-subscribe {
+    background-color: #57AC68;
+    color: #ffffff;
+    padding: 5%;
+    min-width: 70%;
+    height: 54px;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+}
+
+
+/*end of call to acton*/
+
+
+/*blog*/
+
+.blogPage #blog-header {
+    height: 70vh;
+    display: block;
+    width: 100%;
+    position: relative;
+    background: red;
+    padding: 0px;
+    margin: 0px;
+}
+
+.blogPage .blog-box {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: rgb(10, 19, 50);
+    margin: 0px;
+    padding: 0px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.blogPage .blog-box .message-box {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    padding: 0px;
+}
+
+.blogPage .blog-intro-message {
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.blogPage .blog-intro-message article {
+    position: absolute;
+    bottom: 5%;
+    left: 0px;
+    right: 0px;
+    height: 35vh;
+    padding: 2% 2% 2% 1.5%;
+}
+
+.blogPage .blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blogPage .blog-content {
+    width: 70%;
+    height: 10%;
+    padding: 1.5% 1.5% 1.5% 0px;
+}
+
+.blogPage .blog-intro-message article h1 {
+    line-height: 1em;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 2% 2% 2% 0px;
+}
+
+.blogPage .blog-author {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+}
+
+.blogPage .blog-author li {
+    align-self: center;
+}
+
+.blogPage .blog-author img {
+    width: 15%;
+    margin-right: 15px;
+    border-radius: 50%;
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+    padding: 0px;
+}
+
+.blogPage #blog-content-image {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto 5%;
+}
+
+.blogPage #blog-content-image figure {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.blogPage #blog-content-image img {
+    width: 100%;
+    height: auto;
+}
+
+.blogPage .main-blog .container {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px 0px 0px 7%;
+}
+
+.blogPage .blog-con p {
+    line-height: 1.5em;
+    margin: 0px auto 5%;
+}
+
+.blogPage .blog-sidebar {
+    width: 30%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5%;
+}
+
+.blogPage .sidebar-widget {
+    width: 100%;
+    position: relative;
+    color: rgb(255, 255, 255);
+    background: rgb(10, 19, 50);
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.blogPage .action-widget {
+    text-align: center;
+}
+
+.blogPage .sidebar-testimonial {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(216, 217, 219);
+    border-image: initial;
+    margin: 10% auto 0px;
+    border-radius: 5px;
+    padding: 5%;
+}
+
+.blogPage .testimonial-box.container {
+    padding: 0px;
+}
+
+.blogPage .cycleslider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0px auto;
+}
+
+.blogPage .nav_module {
+    margin-bottom: 3%;
+}
+
+.blogPage #sidebarActionReadMore {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(87, 172, 104);
+    width: 77%;
+    box-sizing: border-box;
+    position: relative;
+    line-height: 2em;
+    padding: 2%;
+    border-radius: 50px;
+    margin: 10% auto 0px;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.blogPage .action-widget h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: rgb(87, 172, 104);
+    font-weight: 700;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 3%;
+}
+
+.pColor {
+    color: rgb(103, 109, 115);
+}
+
+.blogPage .blog-author a {
+    color: rgb(87, 172, 104);
+}
+
+.blogPage .main-blog {
+    margin-top: 3%;
+}
+
+#sidebarActionReadMore {
+    @extend #aboutfindBtn;
+    padding: 2%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    width: 20%;
+    box-sizing: border-box;
+    margin: 5% auto 0;
+    transition: all 0.3s;
+    overflow: hidden;
+    position: relative;
+    a {
+        color: $btnColor2;
+    }
+}
+.blogPage .testimonial-des::before{
+    position: relative;
+}
+.blogPage #jQuery-cycle li, .blogPage .cycleslider ul{
+    width: 100% !important;
+}
