@@ -11,6 +11,6 @@ Check responsiveness of smaller devices
 Integrate CSS Grid for all styling.
 and so on...
 
-Implemting changes
+Implementing changes
 
--#Implementing require.js
+- # Add require.js
