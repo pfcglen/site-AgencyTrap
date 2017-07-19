@@ -1,4 +1,7 @@
-$(document).ready(function () {
+
+
+define(['jquery'], function($){
+	$(document).ready(function () {
     //code from css-tricks
     // Select all links with hashes
     $('a[href*="#"]')
@@ -69,3 +72,5 @@ $(document).ready(function () {
         return false;
     });
 }); //end of ready
+
+});
