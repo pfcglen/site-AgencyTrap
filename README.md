@@ -10,3 +10,7 @@ Make all things dynamic.
 Check responsiveness of smaller devices
 Integrate CSS Grid for all styling.
 and so on...
+
+Implemting changes
+
+-#Implementing require.js
